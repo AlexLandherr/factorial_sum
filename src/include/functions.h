@@ -4,8 +4,8 @@
 #define FUNCTIONS_H
 
 namespace func {
-    uint64_t factorial_of(uint64_t n);
-    bool is_equal_to_sum_of_factorial_of_digits(uint64_t n);
+    int64_t factorial_of(int n);
+    bool is_equal_to_sum_of_factorial_of_digits(int64_t n);
 }
 
 #endif
