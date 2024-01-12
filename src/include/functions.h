@@ -6,6 +6,7 @@
 namespace func {
     int64_t factorial_of(int n);
     bool is_equal_to_sum_of_factorial_of_digits(int64_t n);
+    int64_t get_answer();
 }
 
 #endif

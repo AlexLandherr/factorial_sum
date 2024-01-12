@@ -12,7 +12,7 @@ Note: As 1! = 1 and 2! = 2 are not sums they are not included.
 */
 
 int main() {
-    try {
+    /* try {
         int64_t test_num0 = 10;
         int64_t result = func::factorial_of(test_num0);
         std::cout << "Result: " << result << '\n';
@@ -24,7 +24,16 @@ int main() {
 
     int64_t test_num1 = 145;
     std::cout << "Is " << test_num1 << " equal to the sum of the factorial of its digits?: " << '\n';
-    std::cout << std::boolalpha << func::is_equal_to_sum_of_factorial_of_digits(test_num1) << '\n';
+    std::cout << std::boolalpha << func::is_equal_to_sum_of_factorial_of_digits(test_num1) << '\n'; */
+    try {
+        int64_t result = func::get_answer();
+        std::cout << "The sum of all numbers which are equal to the sum of the factorial of their digits is:" << '\n';
+        std::cout << result << '\n';
+    } catch (const std::invalid_argument& ex) {
+        std::cout << ex.what() << '\n';
+    } catch (const std::exception& ex) {
+        std::cout << ex.what() << '\n';
+    }
 
     return 0;
 }
