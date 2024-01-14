@@ -7,7 +7,7 @@ namespace func {
     int64_t factorial_of(int n) {
         const std::array<int64_t, 10> lookup_arr = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880};
         if (n > 9 || n < 0) {
-            throw std::invalid_argument("Argument 'n' is out of range. Must be 1 <= n <= 9.");
+            throw std::invalid_argument("Argument 'n' is out of range. Must be 0 <= n <= 9.");
         } else {
             return lookup_arr[n];
         }
