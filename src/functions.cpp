@@ -24,7 +24,7 @@ namespace func {
 
     int64_t get_answer() {
         int64_t sum = 0;
-        int upper_bound = 7 * 362880;
+        const int upper_bound = 7 * 362880;
 
         for (int i = 10; i < upper_bound; i++) {
             if (is_equal_to_sum_of_factorial_of_digits(i)) {
